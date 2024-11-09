@@ -11,6 +11,7 @@ import random
 import tempfile
 from pathlib import Path
 
+
 def encode_image_to_base64(image_path):
     """Convert an image file to base64 string"""
     try:
