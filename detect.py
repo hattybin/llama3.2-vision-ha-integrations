@@ -61,6 +61,8 @@ def detect_objects(image_path, model="llama3.2-vision"):
 
     For vehicles, provide as much detail as you can confidently determine. If any field cannot be determined, use null.
     For license plates, only include if text is clearly readable.
+
+    REMEMBER: Provide a JSON response with the required format ONLY! Do not include any additional information.
     """
     
     # Prepare the request

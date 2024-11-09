@@ -44,7 +44,7 @@ def draw_detections(image_path, detections_json, output_path=None, filter_classe
     
     # Try to load a font, fall back to default if not available
     try:
-        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 20)
+        font = ImageFont.truetype("/usr/share/fonts/truetype/ubuntu/UbuntuMono-B.ttf", 16)
     except:
         font = ImageFont.load_default()
 

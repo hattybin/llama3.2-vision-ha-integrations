@@ -98,13 +98,17 @@ def detect_objects(image_path, model="llama3.2-vision"):
         return output
 
 def main():
-    parser = argparse.ArgumentParser(description='Detect objects and analyze vehicles in images')
-    parser.add_argument('image_path', type=str, help='Path to the image file')
-    parser.add_argument('--model', type=str, default='llama3.2-vision', help='Model to use')
-    args = parser.parse_args()
+#    parser = argparse.ArgumentParser(description='Detect objects and analyze vehicles in images')
+#    parser.add_argument('image_path', type=str, help='Path to the image file')
+#    parser.add_argument('--model', type=str, default='llama3.2-vision', help='Model to use')
+#    args = parser.parse_args()
     
+    image_path = '/home/mike/Pictures/ai-training/small_old_usps_delivery_truck/10523.jpg'
+    model = 'llama3.2-vision'
+
     try:
-        detect_objects(args.image_path, args.model)
+        # detect_objects(args.image_path, args.model)
+        detect_objects(image_path, model)
     except Exception as e:
         print(json.dumps({"error": str(e), "summary": "Error analyzing image"}))
         sys.exit(1)
